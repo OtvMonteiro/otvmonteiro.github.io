@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 360 282" style="enable-background:new 0 0 360 282;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#222222;}
+	.st1{fill:#2F345F;}
+	.st2{fill:#242A57;}
+	.st3{fill:url(#分组-11_x40_1x-b_2_);fill-opacity:0.4;}
+	.st4{opacity:5.000000e-02;fill:#FFFFFF;enable-background:new    ;}
+	.st5{fill:#6CC0FF;}
+	.st6{fill:#4EADF4;}
+	.st7{fill:url(#分组-11_x40_1x-d_3_);fill-opacity:0.8;}
+	.st8{opacity:0.7;fill:#242A57;enable-background:new    ;}
+	.st9{fill:none;stroke:#FFFFFF;stroke-width:2.077;stroke-linecap:round;stroke-linejoin:round;}
+	.st10{opacity:0.15;enable-background:new    ;}
+	.st11{opacity:0.5;fill:#242A57;enable-background:new    ;}
+</style>
+<path id="分组-11_x40_1x-a" class="st0" d="M2.8,208.7h354.5c1.5,0,2.8-1.2,2.8-2.8V2.8c0-1.5-1.2-2.8-2.8-2.8H2.8
+	C1.2,0,0,1.2,0,2.8V206C0,207.5,1.2,208.7,2.8,208.7z"/>
+<path id="分组-11_x40_1x-a_1_" class="st1" d="M2.8,208.7h354.5c1.5,0,2.8-1.2,2.8-2.8V2.8c0-1.5-1.2-2.8-2.8-2.8H2.8
+	C1.2,0,0,1.2,0,2.8V206C0,207.5,1.2,208.7,2.8,208.7z"/>
+<polygon id="分组-11_x40_1x-b" class="st2" points="145.4,270.9 214.6,270.9 214.6,208.7 145.4,208.7 "/>
+<linearGradient id="分组-11_x40_1x-b_2_" gradientUnits="userSpaceOnUse" x1="-494.2488" y1="521.1097" x2="-494.2488" y2="522.1097" gradientTransform="matrix(69.23 0 0 -62.206 34396.8516 32687.0957)">
+	<stop  offset="0" style="stop-color:#5964A7"/>
+	<stop  offset="1" style="stop-color:#242A57"/>
+</linearGradient>
+<polygon id="分组-11_x40_1x-b_1_" class="st3" points="145.4,270.9 214.6,270.9 214.6,208.7 145.4,208.7 "/>
+<path class="st2" d="M112.2,282h135.7c0.8,0,1.4-0.6,1.4-1.4v-8.3c0-0.8-0.6-1.4-1.4-1.4H112.2c-0.8,0-1.4,0.6-1.4,1.4v8.3
+	C110.8,281.4,111.4,282,112.2,282z"/>
+<path class="st4" d="M110.8,276.5h138.5v-4.1c0-0.8-0.6-1.4-1.4-1.4H112.2c-0.8,0-1.4,0.6-1.4,1.4V276.5z"/>
+<polygon id="分组-11_x40_1x-d" class="st5" points="6.9,200.4 353.1,200.4 353.1,6.9 6.9,6.9 "/>
+<polygon id="分组-11_x40_1x-d_1_" class="st6" points="6.9,200.4 353.1,200.4 353.1,6.9 6.9,6.9 "/>
+<linearGradient id="分组-11_x40_1x-d_3_" gradientUnits="userSpaceOnUse" x1="-500.5498" y1="524.7495" x2="-499.5498" y2="523.7495" gradientTransform="matrix(346.154 0 0 -193.529 173274.2344 101561.1641)">
+	<stop  offset="0" style="stop-color:#86D6FB"/>
+	<stop  offset="1" style="stop-color:#4EADF4"/>
+</linearGradient>
+<polygon id="分组-11_x40_1x-d_2_" class="st7" points="6.9,200.4 353.1,200.4 353.1,6.9 6.9,6.9 "/>
+<ellipse class="st8" cx="180" cy="62.2" rx="27.7" ry="27.6"/>
+<path class="st9" d="M180,46.7c3.7,0,6.6,3,6.6,6.6s-3,6.6-6.6,6.6s-6.6-3-6.6-6.6S176.3,46.7,180,46.7z M193.3,76.6
+	c0-7.3-6-13.3-13.3-13.3s-13.3,5.9-13.3,13.3"/>
+<rect x="69.2" y="110.6" class="st10" width="221.5" height="31.8"/>
+<rect x="258.9" y="110.6" class="st11" width="31.8" height="31.8"/>
+<path class="st9" d="M266.9,126.5h15.8 M276,134.5l6.8-8 M276,118.4l6.8,8"/>
+</svg>

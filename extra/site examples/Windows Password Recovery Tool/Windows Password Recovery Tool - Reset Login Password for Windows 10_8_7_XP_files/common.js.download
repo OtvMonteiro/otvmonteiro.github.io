@@ -1,0 +1,140 @@
+var isAndroid = navigator.userAgent.toLowerCase().match(/android/i) == "android";
+var isIphone = navigator.userAgent.toLowerCase().match(/iphone os/i) == "iphone os";
+var isIpad = navigator.userAgent.toLowerCase().match(/ipad/i) == "ipad";
+var isWinPhone = navigator.userAgent.toLowerCase().match(/windows phone/i) == "windows phone";
+var isMac = (navigator.platform == "Mac68K") || (navigator.platform == "MacPPC") || (navigator.platform == "Macintosh") || (navigator.platform == "MacIntel");
+
+var bWidth = document.documentElement.clientWidth;
+var bHeight = document.documentElement.clientHeight;
+
+var hr = window.location.href;
+var txt = $("h1").text();
+var fb = "http://www.facebook.com/sharer.php?u="+hr;
+var tw = "https://twitter.com/intent/tweet?url="+hr+"&via=WINDOWS PASSWORD RECOVERY TOOL&text="+txt;
+var gp = "https://plus.google.com/share?url="+hr;
+var ln = "http://www.linkedin.com/shareArticle?spm= &mini=true&url="+hr;
+var pt = "https://www.pinterest.com/pin/create/button/?url="+hr+"?spm= &media=";
+
+var urlPath = window.location.pathname;
+
+$(function () {
+    /*google font*/
+    WebFont.load({
+        google: {
+            families: ['Muli:400,400i,700,700i']
+        }
+    });
+
+    /*header js*/
+    $(window).scroll(function () {
+        $('#fix-mav,#return-top').toggleClass('active', $(document).scrollTop() > bHeight);
+    })
+    $(".bread-ico").click(function () {
+        $(this).closest(".bread-wrap").toggleClass("active");
+    })
+    $("header nav").hover(function () {
+        $(this).addClass("active");
+        $("#header-div").addClass("header-div-show");
+        $("#header-div-2").addClass("header-div-show-2");
+    },function () {
+        $(this).removeClass("active");
+        $("#header-div").removeClass("header-div-show");
+        $("#header-div-2").removeClass("header-div-show-2");
+    })
+    $("header .mb .bread-ico").click(function () {
+        $("header .mb .bread-ico").toggleClass("active");
+        $("header .mb .b").slideToggle();
+        $("main,footer").toggleClass("blur-eff");
+    })
+
+    /*return top*/
+    $("#return-top").click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 1200);
+    })
+
+    /*form submit*/
+    // $('form').submit(function () {
+    //     $(this)[0].reset();
+    // })
+
+    /*social share*/
+
+    $("#share-social .fb a").attr("href",fb);
+    $("#share-social .tw a").attr("href",tw);
+    $("#share-social .gp a").attr("href",gp);
+    $("#share-social .ln a").attr("href",ln);
+    $("#share-social .pt a").attr("href",pt);
+
+    /*url path*/
+    switch (urlPath) {
+        case "/" :
+            $("header nav li.a").addClass("active")
+            break;
+        case "/getting_started/" :
+            $("header nav li.b").addClass("active")
+            break;
+        case "/reviews/windows-password-recovery.html" :
+            $("header nav li.c").addClass("active")
+            break;
+        case "/reference/windows-password-recovery.html" :
+            $("header nav li.d").addClass("active")
+            break;
+        case "/product/screenshots.htm" :
+            $("header nav li.e").addClass("active")
+            break;
+    }
+})
+
+//切换
+function switchFun(el1,el2,cls){
+    var last = el1[0];
+    for(var i=0; i<el1.length; i++){
+        el1[i].index = i;
+        el1[i].addEventListener("click",function(){ 
+            last.classList.remove(cls);
+            el2[last.index].classList.remove(cls);
+            this.classList.add(cls);
+            el2[this.index].classList.add(cls);
+            last = this;
+        })
+    }
+}
+
+(function(){
+    var switchCe = document.querySelectorAll(".switch-group .cell");
+    var switchWin = document.querySelectorAll(".switch-group .win");
+    var switchMac = document.querySelectorAll(".switch-group .mac");
+    var sysWin = document.getElementsByClassName("sys-win");
+    var sysMac = document.getElementsByClassName("sys-mac");
+
+    /*switch version*/
+    if(switchCe){
+        for(var i=0; i<switchCe.length; i++){
+            switchCe[i].addEventListener("click",function(){
+                if(this.classList.contains("mac")){
+                    for(var n = 0;n<switchMac.length;n++){
+                        switchMac[n].classList.add("actived");
+                        switchWin[n].classList.remove("actived");
+                    }
+                    for(var j=0;j<sysWin.length;j++){
+                        sysWin[j].classList.add("hidden");
+                    }
+                    for(var i=0;i<sysMac.length;i++){
+                        sysMac[i].classList.remove("hidden");
+                    }
+                }else{
+                    for(var n = 0;n<switchWin.length;n++){
+                        switchWin[n].classList.add("actived");
+                        switchMac[n].classList.remove("actived");
+                    }
+                    for(var j=0;j<sysMac.length;j++){
+                        sysMac[j].classList.add("hidden");
+                    }
+                    for(var i=0;i<sysWin.length;i++){
+                        sysWin[i].classList.remove("hidden");
+                    }
+                }
+            })
+        }  
+    }
+})();
